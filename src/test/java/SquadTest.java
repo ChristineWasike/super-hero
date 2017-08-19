@@ -1,8 +1,8 @@
-import org.junit.*;
-import static org.junit.Assert.*;
+// import org.junit.*;
+// import static org.junit.Assert.*;
 
-@Test
+// @Test
 
-public void Squad_instantiatesCorrectly_true() {
-    Squad mySquad = new Squad("");
-} 
+// public void Squad_instantiatesCorrectly_true() {
+//     Squad mySquad = new Squad("");
+// } 
