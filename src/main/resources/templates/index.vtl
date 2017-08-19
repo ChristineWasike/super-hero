@@ -1,0 +1,41 @@
+<h1>Hero Page</h1>
+
+
+#if ($heros)
+    #foreach ($hero in $heros) 
+      <p>$hero.getName()</p>              ##displays the name of the hero**
+      <p>$hero.getAge()</p>               ##displays the age of the hero**
+      <p>$hero.getPower()</p>             ##displays the power of the hero**
+      <p>$hero.getWeakness()</p>          ##displays the weakness of the hero**
+      <p>$date</p>
+    #end
+    
+#else
+    <p>No heros!</p>
+#end
+
+<p>Add your own custom hero here.</p>
+
+<form action="/heros" method="post">
+    <div class="form-group">
+        <label for="heroname">Hero's Name</label> <br>
+        <input id="heroname" name="heroname" type="text">
+    </div>
+
+    <div class="form-group">
+        <label for="heroage">Hero's Age</label> <br>
+        <input id="heroage" name="heroage" type="number">
+  </div>
+
+    <div class="form-group">
+        <label for="heropower">Hero's Power</label> <br>
+        <input id="heropower" name="heropower" type="text">
+  </div>
+
+    <div class="form-group">
+        <label for="hero">Hero's Weakness</label> <br>
+        <input id="heroweakness" name="heroweakness" type="text">
+  </div>
+
+  <button type="submit" class="btn btn-default">Add hero</button>
+</form>
